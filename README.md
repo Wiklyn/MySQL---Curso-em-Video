@@ -184,7 +184,7 @@ min(peso)|
 ---------|
     35.90|
 
-### 09. Quantas gafanhotas mulheres têm mais de 1.90m de altura?
+### 09. Quantos gafanhotos mulheres têm mais de 1.90m de altura?
 
 select count(*) from gafanhotos where sexo = 'F' and altura > 1.90;
 
