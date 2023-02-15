@@ -71,7 +71,7 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 
 ## Exercícios
 
-### Uma lista com o nome de todas as gafanhotas.
+### 01. Uma lista com o nome de todas as gafanhotas.
 
 select nome from gafanhotos where sexo = 'F';
 
@@ -100,7 +100,7 @@ Rita Pontes           |
 Dayana Dias           |
 Silvana Albuquerque   |
 
-### Uma lista com todos os dados de todos aqueles que nasceram entre 1/Jan/2000 e 31/Dez/2015.
+### 02. Uma lista com todos os dados de todos aqueles que nasceram entre 1/Jan/2000 e 31/Dez/2015.
 
 select * from gafanhotos where nascimento between '2000-01-01' and '2015-12-31';
 
