@@ -3,7 +3,7 @@
 
 Estas são as minhas respostas para os exercícios propostos pelo professor Guanabara na [aula 12](https://youtu.be/q4hPo83-Buo) do curso (Vídeo 14). Os exercícios usam como referência a tabela <strong>gafanhotos</strong>.
 
-## Tabela Gafanhotos.
+## Tabela Gafanhotos
 
 id|nome                     |profissão           |nascimento|sexo|peso  |altura|nacionalidade|
 --|-------------------------|--------------------|----------|----|------|------|-------------|
@@ -68,3 +68,34 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 59|Philppe Oliveira         |Auxiliar Administrat|2000-05-23|M   |105.10|  2.19|Brasil       |
 60|Dayana Dias              |Professor           |1993-05-30|F   | 88.30|  1.66|Angola       |
 61|Silvana Albuquerque      |Programador         |1999-05-22|F   | 56.00|  1.50|Brasil       |
+
+## Exercícios
+
+### Uma lista com o nome de todas as gafanhotas.
+
+select nome from gafanhotos where sexo = 'F';
+
+nome                  |
+----------------------+
+Talita Nascimento     |
+Leila Martins         |
+Letícia Neves         |
+Janaína Couto         |
+Andreia Delfino       |
+Rosana Kunz           |
+Josiane Dutra         |
+Nara Matos            |
+Ana Carolina Mendes   |
+Monique Precivalli    |
+Karine Ribeiro        |
+Jarismar Andrade      |
+Janaina Oliveira      |
+Daniele Moledo        |
+Ana Carolina Hernandes|
+Bruna Teles           |
+Elaine Nunes          |
+Jucinei Teixeira      |
+Bruna Santos          |
+Rita Pontes           |
+Dayana Dias           |
+Silvana Albuquerque   |
