@@ -125,3 +125,69 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 50|Denilson Barbosa da Silva|Empreendedor        |2000-01-08|M   | 97.30|  2.00|Brasil       |
 58|Carlos Camargo           |Programador         |2005-02-22|M   |124.65|  1.33|Brasil       |
 59|Philppe Oliveira         |Auxiliar Administrat|2000-05-23|M   |105.10|  2.19|Brasil       |
+
+### 03. Uma lista com o nome de todos os homens que trabalham como Programadores.
+
+select nome from gafanhotos where sexo = 'M' and profissão = 'Programador';
+
+nome           |
+---------------|
+Emerson Gabriel|
+Jackson Telles |
+Allan Silva    |
+Raian Porto    |
+Anderson Rafael|
+Márcio Mello   |
+André Schmidt  |
+Silvio Ricardo |
+Andre Santini  |
+Ruan Valente   |
+Carlos Camargo |
+
+### 04. Uma lista com todos os dados de todas as mulheres que nasceram no Brasil e que têm seu nome iniciando com a letra J.
+
+select * from gafanhotos where sexo = 'F' and nacionalidade = 'Brasil' and nome like 'j%';
+
+id|nome            |profissão|nascimento|sexo|peso |altura|nacionalidade|
+--|----------------|---------|----------|----|-----|------|-------------|
+33|Jarismar Andrade|Dentista |2000-06-23|F   |63.70|  1.33|Brasil       |
+
+### 05. Uma lista com o nome e a nacionalidade de todos os homens que tê Silva no nome, não nasceram no Brasil e pesam menos de 100kg.
+
+select nome, nacionalidade from gafanhotos where nome like '%_Silva%' and nacionalidade != 'Brasil' and peso < '100';
+
+nome          |nacionalidade|
+--------------|-------------|
+Herisson Silva|EUA          |
+
+### 06. Qual é a maior altura entre gafanhotos homens que moram no Brasil?
+
+select max(altura) from gafanhotos where sexo = 'M' and nacionalidade = 'Brasil';
+
+max(altura)|
+-----------|
+       2.35|
+
+### 07. Qual é a média de peso dos gafanhotos cadastrados?
+
+select avg(peso) from gafanhotos;
+
+avg(peso)|
+---------|
+73.967705|
+
+### 08. Qual é o menor peso entre as gafanhotos mulheres que nasceram fora do Brasil e entre 01/Jan/1990 e 31/Dez/2000?
+
+select min(peso) from gafanhotos where sexo = 'F' and nacionalidade != 'Brasil' and nascimento between '1990-01-01' and '2000-12-31';
+
+min(peso)|
+---------|
+    35.90|
+
+### 09. Quantas gafanhotas mulheres têm mais de 1.90m de altura?
+
+select count(*) from gafanhotos where sexo = 'F' and altura > 1.90;
+
+count(*)|
+--------|
+       5|
