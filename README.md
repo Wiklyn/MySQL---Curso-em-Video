@@ -76,7 +76,7 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 select nome from gafanhotos where sexo = 'F';
 
 nome                  |
-----------------------+
+----------------------|
 Talita Nascimento     |
 Leila Martins         |
 Letícia Neves         |
