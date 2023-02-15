@@ -126,7 +126,7 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 58|Carlos Camargo           |Programador         |2005-02-22|M   |124.65|  1.33|Brasil       |
 59|Philppe Oliveira         |Auxiliar Administrat|2000-05-23|M   |105.10|  2.19|Brasil       |
 
-### 03. Uma lista com o nome de todos os homens que trabalham como Programadores.
+### 03. Uma lista com o nome de todos os homens que trabalham como Programador.
 
 select nome from gafanhotos where sexo = 'M' and profissão = 'Programador';
 
