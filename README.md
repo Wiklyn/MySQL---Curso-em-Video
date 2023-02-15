@@ -1,7 +1,7 @@
 # Exercícios do [Curso de Banco de Dados MySQL](https://youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r), do [Curso em Vídeo](https://www.youtube.com/@CursoemVideo)
 
 
-Estas são as minhas respostas para os exercícios propostos pelo professor [Guanabara](https://github.com/gustavoguanabara) nas aulas [12](https://youtu.be/q4hPo83-Buo) e [13](https://youtu.be/ocyVJ9gRUaE) do curso (Vídeo 14). Os exercícios usam como referência a tabela <strong>gafanhotos</strong>.
+Estas são as minhas respostas para os exercícios propostos pelo professor [Guanabara](https://github.com/gustavoguanabara) nas aulas [12](https://youtu.be/q4hPo83-Buo) e [13](https://youtu.be/ocyVJ9gRUaE) do curso. Os exercícios usam como referência a tabela <strong>gafanhotos</strong>.
 
 ## Tabela Gafanhotos
 
@@ -191,3 +191,18 @@ select count(*) from gafanhotos where sexo = 'F' and altura > 1.90;
 count(*)|
 --------|
        5|
+
+### 10. Uma lista com as profissões dos gafanhotos e seus respectivos quantitativos.
+
+select profissão, count(*) from gafanhotos group by profissão;
+
+profissão           |count(*)|
+--------------------|--------|
+Auxiliar Administrat|      13|
+Farmacêutico        |       2|
+Programador         |      16|
+Professor           |       7|
+Dentista            |       7|
+Ator                |       6|
+Empreendedor        |       7|
+Médico              |       3|
