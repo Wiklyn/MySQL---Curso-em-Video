@@ -3,7 +3,7 @@
 
 Estas são as minhas respostas para os exercícios propostos pelo professor Guanabara na [aula 12](https://youtu.be/q4hPo83-Buo) do curso (Vídeo 14).
 
-##Esta é a tabela <strong>gafanhotos</strong>, tabela de referência para os exercícios.
+## Esta é a tabela <strong>gafanhotos</strong>, tabela de referência para os exercícios.
 
 id|nome                     |profissão           |nascimento|sexo|peso  |altura|nacionalidade|
 --|-------------------------|--------------------|----------|----|------|------|-------------|
