@@ -152,7 +152,7 @@ id|nome            |profissão|nascimento|sexo|peso |altura|nacionalidade|
 --|----------------|---------|----------|----|-----|------|-------------|
 33|Jarismar Andrade|Dentista |2000-06-23|F   |63.70|  1.33|Brasil       |
 
-### 05. Uma lista com o nome e a nacionalidade de todos os homens que tê Silva no nome, não nasceram no Brasil e pesam menos de 100kg.
+### 05. Uma lista com o nome e a nacionalidade de todos os homens que têm Silva no nome, não nasceram no Brasil e pesam menos de 100kg.
 
 select nome, nacionalidade from gafanhotos where nome like '%_Silva%' and nacionalidade != 'Brasil' and peso < '100';
 
