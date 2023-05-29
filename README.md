@@ -1,9 +1,9 @@
 # Exercícios do [Curso de Banco de Dados MySQL](https://youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r), do [Curso em Vídeo](https://www.youtube.com/@CursoemVideo)
 
 
-Estas são as minhas respostas para os exercícios propostos pelo professor [Guanabara](https://github.com/gustavoguanabara) nas aulas [12](https://youtu.be/q4hPo83-Buo) e [13](https://youtu.be/ocyVJ9gRUaE) do curso. Os exercícios usam como referência a tabela <strong>gafanhotos</strong>.
+Estas são as minhas respostas para os exercícios propostos pelo professor [Guanabara](https://github.com/gustavoguanabara) nas aulas [12](https://youtu.be/q4hPo83-Buo) e [13](https://youtu.be/ocyVJ9gRUaE) do curso. Os exercícios usam como referência a tabela <strong>Gafanhotos</strong>.
 
-## Tabela Gafanhotos
+## Gafanhotos
 
 id|nome                     |profissão           |nascimento|sexo|peso  |altura|nacionalidade|
 --|-------------------------|--------------------|----------|----|------|------|-------------|
