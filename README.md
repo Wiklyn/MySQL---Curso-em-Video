@@ -73,7 +73,7 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 
 ### 01. Uma lista com o nome de todas as gafanhotas.
 
-```
+```sql
 SELECT nome
   FROM gafanhoto
  WHERE sexo = 'F';
@@ -106,7 +106,7 @@ Silvana Albuquerque   |
 
 ### 02. Uma lista com todos os dados de todos aqueles que nasceram entre 1/Jan/2000 e 31/Dez/2015.
 
-```
+```sql
  SELECT *
    FROM gafanhotos
   WHERE nascimento
@@ -137,7 +137,7 @@ id|nome                     |profissão           |nascimento|sexo|peso  |altura
 
 ### 03. Uma lista com o nome de todos os homens que trabalham como Programador.
 
-```
+```sql
 SELECT nome
   FROM gafanhotos
  WHERE sexo = 'M'
@@ -160,7 +160,7 @@ Carlos Camargo |
 
 ### 04. Uma lista com todos os dados de todas as mulheres que nasceram no Brasil e que têm seu nome iniciando com a letra J.
 
-```
+```sql
 SELECT *
   FROM gafanhotos
  WHERE sexo = 'F'
@@ -174,7 +174,7 @@ id|nome            |profissão|nascimento|sexo|peso |altura|nacionalidade|
 
 ### 05. Uma lista com o nome e a nacionalidade de todos os homens que têm Silva no nome, não nasceram no Brasil e pesam menos de 100kg.
 
-```
+```sql
 SELECT nome,
        nacionalidade
   FROM gafanhotos
@@ -189,7 +189,7 @@ Herisson Silva|EUA          |
 
 ### 06. Qual é a maior altura entre gafanhotos homens que moram no Brasil?
 
-```
+```sql
 SELECT MAX(altura)
   FROM gafanhotos
  WHERE sexo = 'M'
@@ -202,7 +202,7 @@ max(altura)|
 
 ### 07. Qual é a média de peso dos gafanhotos cadastrados?
 
-```
+```sql
 SELECT AVG(peso)
   FROM gafanhotos;
 ```
@@ -213,7 +213,7 @@ avg(peso)|
 
 ### 08. Qual é o menor peso entre as gafanhotos mulheres que nasceram fora do Brasil e entre 01/Jan/1990 e 31/Dez/2000?
 
-```
+```sql
 SELECT MIN(peso)
   FROM gafanhotos
  WHERE sexo = 'F'
@@ -227,7 +227,7 @@ min(peso)|
 
 ### 09. Quantos gafanhotos mulheres têm mais de 1.90m de altura?
 
-```
+```sql
 SELECT COUNT(*)
   FROM gafanhotos
  WHERE sexo = 'F'
@@ -240,7 +240,7 @@ count(*)|
 
 ### 10. Uma lista com as profissões dos gafanhotos e seus respectivos quantitativos.
 
-```
+```sql
 SELECT profissão,
        COUNT(*)
   FROM gafanhotos
@@ -260,7 +260,7 @@ Médico              |       3|
 
 ### 11. Quantos gafanhotos homens e quantas mulheres nasceram após 01/Jan/2005.
 
-```
+```sql
 SELECT sexo,
        COUNT(*)
   FROM gafanhotos
@@ -275,7 +275,7 @@ F   |       2|
 
 ### 12. Uma lista com os gafanhotos que nasceram fora do Brasil, mostrando o país de origem e o total de pessoas nascidas lá. Só nos interessam os países que  tiverem mais de 3 gafanhotos com essa nacionalidade.
 
-```
+```sql
 SELECT nacionalidade,
        COUNT(*)
   FROM gafanhotos
@@ -293,7 +293,7 @@ Angola       |       4|
 
 ### 13. Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais de 100kg e que estão acima da média de altura de todos os cadastrados.
 
-```
+```sql
 SELECT altura,
        COUNT(*)
   FROM gafanhotos
